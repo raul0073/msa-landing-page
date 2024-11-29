@@ -1,4 +1,3 @@
-import Logo from "@/app/[client]/components/logo/Logo";
 import { Button } from "@/components/ui/button";
 import {
 	ClipboardCheck,
@@ -8,6 +7,7 @@ import {
 	LucideLineChart,
 } from "lucide-react";
 import Link from "next/link";
+import Logo from "./Logo";
 
 function EntryComp() {
   return (
