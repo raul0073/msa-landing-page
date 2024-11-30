@@ -10,13 +10,16 @@ export const Highlight = ({
 	className?: string;
 }) => {
 	return (
-		<span
-			className={cn(
-				"font-bold bg-neutral-100 text-emerald-700 dark:bg-emerald-700/[0.2] dark:text-emerald-500 py-0.5",
-				className
-			)}>
-			{children}
-		</span>
+		<motion.span
+		initial={{ backgroundSize: "0% 100%", opacity:0 }}
+		whileInView={{ backgroundSize: "100% 100%", opacity:1}}
+		transition={{ duration: 0.5, ease: "easeOut", delay: 1 }}
+		className={cn(
+			"font-bold bg-gradient-to-r from-yellow-200 to-yellow-400 bg-no-repeat bg-left-bottom dark:from-emerald-700/[0.3] dark:to-emerald-500/[0.3] text-black dark:text-white py-0.5",
+			className
+		)}>
+		{children}
+	</motion.span>
 	);
 };
 export function ImagesBarComp() {
