@@ -7,7 +7,7 @@ function ServicesNavbar() {
 	return (
 		<nav className="w-full flex justify-end items-center">
 			<div className="pt-8 pb-2 top-bar w-[90%] lg:w-[70%] mx-auto flex justify-between items-center border-b border-muted-foreground/10">
-				<div className="font-bold tracking-widest text-xl text-white">
+				<div className="font-bold tracking-widest lg:text-xl text-white">
 					{homeLabels.logoPart1}
 					<span className="text-white/80">{homeLabels.logoPart2}</span>
 				</div>

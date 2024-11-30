@@ -2,6 +2,8 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useEffect, useState } from "react";
+import artMob from "./../../../../public/images/3424133_darker.png";
 import art from "./../../../../public/images/3424133_darker_tilted.png";
 import { homeLabels } from "./homeLabels";
 import { Highlight } from "./ImagesBarComp";
@@ -9,29 +11,41 @@ import { Highlight } from "./ImagesBarComp";
 const transition = { duration: 0.6, ease: "easeInOut" };
 
 export function ServicesHero() {
+	const [isMobile, setIsMobile] = useState<boolean>(false);
+
+	useEffect(() => {
+		// Check if the viewport width is less than or equal to 768px
+		const checkMobile = () => setIsMobile(window.innerWidth <= 768);
+
+		// Initial check
+		checkMobile();
+
+		// Add resize event listener
+		window.addEventListener("resize", checkMobile);
+
+		// Cleanup listener on component unmount
+		return () => window.removeEventListener("resize", checkMobile);
+	}, []);
+
 	return (
-		<div className="hero w-full max-w-7xl mx-auto h-[50vh] mt-24 flex flex-col justify-center p-4 mb-24">
-			<div className="w-full grid grid-cols-1 place-items-center lg:grid-cols-2 ">
-				<div className="flex flex-col justify-center gap-4">
+		<div className="hero w-full max-w-7xl mx-auto h-[95vh] flex flex-col gap-8 lg:justify-center p-4 lg:mt-24 lg:mb-24">
+			<div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 mt-[5rem] lg:mt-[-12rem]">
+				<div className="flex flex-col lg:justify-center justify-between  gap-4">
 					<motion.h1
 						initial={{ opacity: 0, y: 10 }}
 						whileInView={{ opacity: 1, y: 0 }}
 						transition={transition}
-						className="w-full font-semibold text-6xl md:text-7xl text-white"
-					>
-						{homeLabels.hero.text1_visual} <br /> {homeLabels.hero.text2_visual}{" "}
-						<span className="text-primary font-semibold">
-							{homeLabels.hero.pro}
-						</span>
-						
+						viewport={{once: true}}
+						className="w-full text-center lg:text-left d bg-clip-text text-transparent  bg-gradient-to-b from-neutral-400 to-neutral-50 dark:from-neutral-600 dark:to-white text-5xl lg:text-7xl font-sans py-2  relative z-20 font-bold tracking-tight">
+						{"M.S.A."}
 					</motion.h1>
 
 					<motion.h2
 						initial={{ opacity: 0, y: 10 }}
 						whileInView={{ opacity: 1, y: 0 }}
 						transition={transition}
-						className="max-w-[550px] text-white/70 text-wrap text-left"
-					>
+						viewport={{once: true}}
+						className="max-w-[550px] text-white/70 text-wrap text-center lg:text-left">
 						{homeLabels.hero.subText}{" "}
 						<Highlight>{homeLabels.hero.subText_highlight}</Highlight>{" "}
 						{homeLabels.hero.subText_after_highlight}
@@ -41,27 +55,31 @@ export function ServicesHero() {
 						initial={{ opacity: 0, scale: 0.9 }}
 						whileInView={{ opacity: 1, scale: 1 }}
 						transition={{ ...transition, delay: 1.5 }}
-						className="flex flex-col gap-4  w-2/3"
-					>
+						viewport={{once: true}}
+						className="flex flex-col lg:flex-row gap-4 w-2/3 lg:w-fit mx-auto lg:mx-0">
 						<Button
-							className="w-full p-6 font-semibold rounded-full mt-12"
-							variant={"default"}
-						>
+							className="w-inherit p-6 font-semibold rounded-full mt-12"
+							variant={"outline"}>
+							{homeLabels.content.btn_learn}
+						</Button>
+						<Button
+							className="w-full p-6 font-semibold rounded-full mt-4 mb-12 lg:mb-0 lg:mt-12"
+							variant={"default"}>
 							{homeLabels.content.btn_ingage}
 						</Button>
 					</motion.div>
 				</div>
 
 				<motion.div
-					className="place-self-end hidden lg:flex"
+					className="place-self-center lg:place-self-end"
 					initial={{ scale: 0.8, opacity: 0 }}
 					whileInView={{ scale: 1, opacity: 1 }}
 					transition={{ ...transition, delay: 0.2 }}
-				>
+					viewport={{once: true}}>
 					<Image
-						src={art}
-						width={450}
-						height={450}
+						src={isMobile ? artMob : art}
+						width={isMobile ? 200 : 450}
+						height={isMobile ? 250 : 450}
 						alt="hero_art"
 						className="hover:-translate-y-4 transition-transform duration-300 ease-in"
 					/>

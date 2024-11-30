@@ -14,6 +14,7 @@ export const Highlight = ({
 		initial={{ backgroundSize: "0% 100%", opacity:0 }}
 		whileInView={{ backgroundSize: "100% 100%", opacity:1}}
 		transition={{ duration: 0.5, ease: "easeOut", delay: 1 }}
+		viewport={{once: true}}
 		className={cn(
 			"font-bold bg-gradient-to-r from-yellow-200 to-yellow-400 bg-no-repeat bg-left-bottom dark:from-emerald-700/[0.3] dark:to-emerald-500/[0.3] text-black dark:text-white py-0.5",
 			className
