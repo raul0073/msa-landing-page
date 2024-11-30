@@ -31,7 +31,7 @@ export function ImagesBarComp() {
 	];
 	return (
 		<div className="w-full h-2 bg-black">
-			<div className="flex justify-center items-center md:-translate-y-16 -translate-y-8">
+			<div className="flex justify-center items-center h-fit -translate-y-[50%]">
 				{images.map((image, idx) => (
 					<motion.div
 						key={"images" + idx}
