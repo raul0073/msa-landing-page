@@ -28,9 +28,9 @@ export function ServicesHero() {
 	}, []);
 
 	return (
-		<div className="hero w-full max-w-7xl mx-auto min-h-[42rem] flex flex-col gap-8 lg:justify-center p-4 lg:mt-24 lg:mb-24">
-			<div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 mt-[2rem] lg:mt-[-12rem]">
-				<div className="flex flex-col lg:justify-center justify-between  gap-4">
+		<div className="hero w-full min-h-[90dvh]">
+			<div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 pt-24">
+				<div className="flex flex-col lg:justify-center justify-between  gap-4  px-2">
 					<motion.h1
 						initial={{ opacity: 0, y: 10 }}
 						whileInView={{ opacity: 1, y: 0 }}
@@ -43,19 +43,19 @@ export function ServicesHero() {
 					</motion.h1>
 
 					<motion.h2
-						initial={{ opacity: 0, y: 10 }}
+						initial={{ opacity: 0, y: -10 }}
 						whileInView={{ opacity: 1, y: 0 }}
 						transition={transition}
 						viewport={{ once: true }}
 						className="max-w-[550px] text-white/70 text-wrap text-center lg:text-left mx-auto lg:mx-0">
-						{homeLabels.hero.subText} {homeLabels.hero.subText_highlight}{" "}
+						{homeLabels.hero.subText} <br /> {homeLabels.hero.subText_highlight}{" "}
 						{homeLabels.hero.subText_after_highlight}
 					</motion.h2>
 
 					<motion.div
 						initial={{ opacity: 0, scale: 0.9 }}
 						whileInView={{ opacity: 1, scale: 1 }}
-						transition={{ ...transition, delay: 1.5 }}
+						transition={{ ...transition, delay: 2 }}
 						viewport={{ once: true }}
 						className="flex flex-col lg:flex-row gap-4 w-2/3 lg:w-fit mx-auto lg:mx-0">
 						<Button
@@ -72,7 +72,7 @@ export function ServicesHero() {
 				</div>
 
 				<motion.div
-					className="hidden lg:flex place-self-center lg:place-self-end"
+					className=" lg:flex place-self-center lg:place-self-end"
 					initial={{ scale: 0.8, opacity: 0 }}
 					whileInView={{ scale: 1, opacity: 1 }}
 					transition={{ ...transition, delay: 0.2 }}

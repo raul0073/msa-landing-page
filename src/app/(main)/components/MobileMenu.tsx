@@ -14,7 +14,7 @@ function MobileMenu() {
 	return (
 		<Drawer>
 			<DrawerTrigger>
-				<MenuIcon className="md:hidden text-white"/>
+				<MenuIcon className="md:hidden text-white" width={30} height={30}/>
 			</DrawerTrigger>
 			<DrawerContent className="rounded-none p-4 w-[200px] border-none bg-black">
 				<DrawerHeader>

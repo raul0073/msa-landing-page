@@ -16,7 +16,7 @@ export const Highlight = ({
 		transition={{ duration: 0.5, ease: "easeOut", delay: 1 }}
 		viewport={{once: true}}
 		className={cn(
-			"highlights font-bold bg-gradient-to-br from-primary/90 to-primary bg-no-repeat bg-left-bottom dark:from-emerald-700/[0.3] dark:to-emerald-500/[0.3]",
+			"highlights font-bold bg-gradient-to-br from-primary/90 to-primary bg-no-repeat bg-left-bottom",
 			className
 		)}>
 		{children}
@@ -31,8 +31,8 @@ export function ImagesBarComp() {
 		"https://eleven-website.s3.il-central-1.amazonaws.com/images/bday3.jpeg",
 	];
 	return (
-		<div className="w-full h-2 bg-black shadow-lg shadow-black -mt-8">
-			<div className="flex justify-center items-center h-fit -translate-y-[50%]">
+		<div className="w-full h-2 relative">
+			<div className="flex justify-center items-center h-fit absolute -top-12 md:-top-24 left-[50%] -translate-x-[50%]">
 				{images.map((image, idx) => (
 					<motion.div
 						key={"images" + idx}

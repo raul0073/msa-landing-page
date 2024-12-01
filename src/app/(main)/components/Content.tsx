@@ -5,7 +5,7 @@ import { homeLabels } from "./homeLabels";
 function ServicesContent() {
 	return (
 		<Fragment>
-			<div className="content-bottom text-center min-h-[40vh] h-fit bg-white pt-[8rem] pb-12 ">
+			<div className="content-bottom text-center pt-[7rem] lg:pt-[8rem] pb-12 h-fit bg-white">
 				<h3 className="text-black text-pretty w-[90%] mx-auto">
 					{homeLabels.content.header}
 					<br />
@@ -15,9 +15,9 @@ function ServicesContent() {
 					{homeLabels.content.unleash}
 				</h4>
 				<Button
-					className="w-inherit p-6 font-semibold rounded-full mt-12"
+					className="w-inherit p-6 font-semibold rounded-full my-12"
 					variant={"outline"}>
-					{homeLabels.content.btn_learn}
+					{homeLabels.content.btn_more}
 				</Button>
 			</div>
 		</Fragment>

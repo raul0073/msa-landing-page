@@ -8,8 +8,10 @@ export default function Home() {
 	<Fragment>
 		
 		<ServicesHero />
+		<div className="min-h-[60dvh]  p-12 md:p-24">
 		<ImagesBarComp />
 		<ServicesContent />
+		</div>
 	</Fragment>
 
 	);
