@@ -28,7 +28,7 @@ export function ServicesHero() {
 	}, []);
 
 	return (
-		<div className="hero w-full max-w-7xl mx-auto h-[95vh] flex flex-col gap-8 lg:justify-center p-4 lg:mt-24 lg:mb-24">
+		<div className="hero w-full max-w-7xl mx-auto min-h-[42rem] flex flex-col gap-8 lg:justify-center p-4 lg:mt-24 lg:mb-24">
 			<div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 mt-[2rem] lg:mt-[-12rem]">
 				<div className="flex flex-col lg:justify-center justify-between  gap-4">
 					<motion.h1
@@ -72,7 +72,7 @@ export function ServicesHero() {
 				</div>
 
 				<motion.div
-					className="place-self-center lg:place-self-end"
+					className="hidden lg:flex place-self-center lg:place-self-end"
 					initial={{ scale: 0.8, opacity: 0 }}
 					whileInView={{ scale: 1, opacity: 1 }}
 					transition={{ ...transition, delay: 0.2 }}

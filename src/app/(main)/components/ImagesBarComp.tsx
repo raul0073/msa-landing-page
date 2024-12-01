@@ -31,7 +31,7 @@ export function ImagesBarComp() {
 		"https://eleven-website.s3.il-central-1.amazonaws.com/images/bday3.jpeg",
 	];
 	return (
-		<div className="w-full h-2 bg-black">
+		<div className="w-full h-2 bg-black shadow-lg shadow-black -mt-8">
 			<div className="flex justify-center items-center h-fit -translate-y-[50%]">
 				{images.map((image, idx) => (
 					<motion.div
