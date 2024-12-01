@@ -7,9 +7,8 @@ function ServicesNavbar() {
 	return (
 		<nav className="w-full flex justify-end items-center">
 			<div className="pt-8 pb-2 top-bar w-[90%] lg:w-[70%] mx-auto flex justify-between items-center border-b border-muted-foreground/10">
-				<div className="font-bold tracking-widest lg:text-xl text-white">
-					{homeLabels.logoPart1}
-					<span className="text-white/80">{homeLabels.logoPart2}</span>
+				<div 						className="w-full text-left d bg-clip-text text-transparent  bg-gradient-to-b from-neutral-400 to-neutral-50 dark:from-neutral-600 dark:to-white text-3xl  font-sans py-2  relative z-20 font-bold tracking-tight">
+					{homeLabels.msa}
 				</div>
 				<MobileMenu />
 				<ul className="gap-4 uppercase hidden md:flex">

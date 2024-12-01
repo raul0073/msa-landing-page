@@ -19,29 +19,37 @@ function MobileMenu() {
 			<DrawerContent className="rounded-none p-4 w-[200px] border-none bg-black">
 				<DrawerHeader>
 					<DrawerTitle>
-						<Logo className="w-10 h-10" />
+						<Logo className="w-20 h-10" />
 					</DrawerTitle>
 					<Separator />
 				</DrawerHeader>
-				<ul className="space-y-4">
+				<ul className="space-y-8 text-center font-sans mt-24">
 					<li>
 						<a
 							href="/"
-							className="text-white/70 hover:text-white transition-colors duration-100 ease-in-out">
+							className="text-white/60 hover:text-white hover:tracking-wider  transition-all duration-100 ease-in-out">
 							Home
 						</a>
 					</li>
+
 					<li>
 						<a
 							href="/about"
-							className="text-white/70 hover:text-white transition-colors duration-100 ease-in-out">
+							className="text-white/60 hover:text-white hover:tracking-wider  transition-all duration-100 ease-in-out">
 							About
 						</a>
 					</li>
 					<li>
 						<a
+							href="/contact"
+							className="text-white/60 hover:text-white hover:tracking-wider  transition-all duration-100 ease-in-out">
+							Contact
+						</a>
+					</li>
+					<li>
+						<a
 							href="/login"
-							className="text-white/70 hover:text-white transition-colors duration-100 ease-in-out">
+							className="text-white/60 hover:text-white hover:tracking-wider  transition-all duration-100 ease-in-out">
 							Login
 						</a>
 					</li>

@@ -1,6 +1,7 @@
 export const homeLabels = {
     logoPart1: "EXPERI",
     logoPart2: "MENTAL",
+    msa: "M.S.A.",
     nav: {
         home: "Home",
         contact: "Contact",
@@ -23,7 +24,7 @@ export const homeLabels = {
         btn_ingage: "Get Started for Free"
     },
     footer: {
-        websitename: "- experiMental - ",
+        websitename: "- M.S.A. - ",
         moto: "Designed to elevate your data game.",
         trademark: "© 2023 All rights reserved"
     }
