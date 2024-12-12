@@ -37,7 +37,7 @@ export function ServicesHero() {
 				<div className="flex justify-center gap-4 w-2/3 max-w-xl mx-auto mt-24">
 					<motion.div
 
-						className="w-full lg:p-6 flex flex-col gap-4 lg:justify-between  font-semibold lg:text-lg rounded-full heroBtns">
+						className="w-full lg:p-6 flex flex-col gap-4 lg:flex-row lg:justify-between  font-semibold lg:text-lg rounded-full heroBtns">
 						<Button
 							className="w-full lg:p-6 lg:text-lg rounded-full"
 							variant={"default"}>
