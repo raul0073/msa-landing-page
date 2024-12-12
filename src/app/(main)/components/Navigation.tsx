@@ -1,5 +1,5 @@
 "use client";
-import logo from "@/../public/images/msa_logo.png";
+import logo from "@/../public/images/RML.png";
 import useScrollAndScreen from "@/app/customHooks/useScrollAndResize";
 import Image from "next/image";
 import { ButtonDefaultComp, ButtonOutlineComp } from "./Button";

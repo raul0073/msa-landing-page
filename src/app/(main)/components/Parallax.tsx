@@ -6,7 +6,7 @@ import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 
 export function Parallax() {
   return (
-    <div className="flex flex-col overflow-hidden">
+    <div className="flex flex-col overflow-hidden px-4">
       <ContainerScroll
         titleComponent={
           <>

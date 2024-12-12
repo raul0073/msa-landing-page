@@ -54,7 +54,7 @@ export const amazingAnalytics = {
 
 export function Introduction() {
 	return (
-		<section className="introduction w-full py-24 relative ">
+		<section className="introduction w-full py-24 px-4 relative ">
 			<div className="container ">
 				<div className="mb-24">
                 <h2 className="w-full text-center text-white text-4xl max-w-2xl mx-auto">
@@ -92,7 +92,7 @@ type IntroCardProps = {
 export function IntroCard({ src, title, description }: IntroCardProps) {
 	return (
 		<div className="introCard flex flex-col px-4 relative">
-			<div className="h-10 w-10 rounded-2xl  backdrop-blur-sm flex items-center justify-center  bg-white bg-grid-extrasmall-zinc-200  overflow-hidden">
+			<div className="h-10 w-10 rounded-2xl  backdrop-blur-sm flex items-center justify-center  bg-white bg-grid-extrasmall-zinc-200  overflow-hidden shadow-lime-400 shadow-[0_10px_70px_rgba(8,_112,_184,_0.7)]">
 				<Image
 					src={src}
 					alt="placeholder"
