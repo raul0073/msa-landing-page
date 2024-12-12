@@ -10,8 +10,8 @@ export function ServicesHero() {
 		<section className="pt-24 px-4 pb-24">
 			<div className="container mx-auto relative">
 				<div className="flex justify-center ml-[50%] promo">
-					<div className="inline-flex py-1 text-xs md:text-sm md:px-4 px-2 bg-gradient-to-t from-purple-400 to-pink-400 rounded-full text-neutral-950 font-semibold">
-						Some Text Here ✨
+					<div className="inline-flex py-1 text-xs md:text-sm md:px-4 px-2 bg-gradient-to-t from-purple-400 to-pink-400 rounded-full text-neutral-950 font-semibold capitalize">
+						special offer ✨
 					</div>
 				</div>
 
@@ -26,26 +26,33 @@ export function ServicesHero() {
 					<Highlight className="p-0 h-4">{homeLabels.hero.pro}.</Highlight>
 				</motion.h1>
 				<motion.p
-					initial={{ opacity: 0, y: -10 }}
-					whileInView={{ opacity: 1, y: 0 }}
-					transition={{ duration: 0.6, ease: "easeIn", delay: 1.2 }}
-					viewport={{ once: true }}
+						initial={{ opacity: 0, y: -10 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						transition={{ duration: 0.6, ease: "easeIn", delay: 1.2 }}
+						viewport={{ once: true }}
 					className="text-center text-xl text-white/50 mt-8 max-w-2xl mx-auto">
 					{homeLabels.hero.subText} {homeLabels.hero.subText_highlight}{" "}
 					{homeLabels.hero.subText_after_highlight}
 				</motion.p>
-				<div className="flex justify-center gap-4 w-2/3 max-w-xl mx-auto mt-24">
+				<div className="flex flex-col md:flex-row justify-center gap-4 w-2/3 max-w-xl mx-auto mt-24">
 					<motion.div
-							initial={{ opacity: 0, scale:.2 }}
+							initial={{ opacity: 0, scale: 0.8 }}
 							whileInView={{ opacity: 1, scale: 1 }}
-							transition={{ duration: .4, ease: "easeIn", delay: 1.8 }}
-						className="w-full lg:p-6 flex flex-col gap-4 lg:flex-row lg:justify-between  font-semibold lg:text-lg rounded-full heroBtns">
+							viewport={{ once: true }}
+							transition={{ duration: 0.4, ease: "easeIn", delay:2 }}
+						className="w-full lg:p-6 flex flex-col gap-4 lg:flex-row lg:justify-between  font-semibold lg:text-lg rounded-full">
 						<Button
 							className="w-full lg:p-6 lg:text-lg rounded-full"
 							variant={"default"}>
 							{homeLabels.content.btn_ingage}
 						</Button>
-						
+					</motion.div>
+					<motion.div
+							initial={{ opacity: 0, scale: 0.8 }}
+							whileInView={{ opacity: 1, scale: 1 }}
+							viewport={{ once: true }}
+							transition={{ duration: 0.4, ease: "easeIn", delay: 2 }}
+						className="w-full lg:p-6 flex flex-col gap-4 lg:flex-row lg:justify-between  font-semibold lg:text-lg rounded-full ">					
 						<Button
 							className="w-full lg:p-6 lg:text-lg rounded-full"
 							variant={"secondary"}>

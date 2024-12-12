@@ -6,13 +6,14 @@ import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 
 export function Parallax() {
   return (
-    <div className="flex flex-col overflow-hidden px-4">
+    <section className="parallax flex flex-col overflow-hidden px-4">
+     
       <ContainerScroll
         titleComponent={
           <>
-            <h1 className="text-4xl font-semibold bg-gradient-to-r from-gray-100 to-gray-300 bg-clip-text text-transparent">
+            <h1 className="text-4xl font-semibold bg-gradient-to-r relative lg:-top-4 from-gray-100 to-gray-300 bg-clip-text text-transparent">
               Unleash the power of <br />
-              <span className="text-4xl md:text-[6rem] font-bold mt-1 bg-gradient-to-tl from-lime-400 to-green-600 bg-clip-text text-transparent">
+              <span className="text-4xl md:text-[6rem] font-bold mt-1 relative lg:top-4 bg-gradient-to-tl from-lime-400 to-green-600 bg-clip-text text-transparent">
                 Your Data.
               </span>
             </h1>
@@ -28,6 +29,6 @@ export function Parallax() {
           draggable={false}
         />
       </ContainerScroll>
-    </div>
+    </section>
   );
 }

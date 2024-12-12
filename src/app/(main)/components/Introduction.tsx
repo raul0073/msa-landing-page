@@ -54,7 +54,7 @@ export const amazingAnalytics = {
 
 export function Introduction() {
 	return (
-		<section className="introduction w-full py-24 px-4 relative ">
+		<section className="introduction w-full py-24 px-4 relative">
 			<div className="container ">
 				<div className="mb-24">
                 <h2 className="w-full text-center text-white text-4xl max-w-2xl mx-auto">
@@ -66,7 +66,8 @@ export function Introduction() {
                 </div>
 
 				<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 max-w-5xl mx-auto gap-20 my-20 md:my-40 px-4">
-					<div className="absolute w-96 h-96 -left-64 -top-40 bg-gradient-to-t from-[#9890e3] to-[#b1f4cf] blur-3xl rounded-full opacity-20"></div>
+					<div className="absolute w-96 h-96 -left-[35%] -top-24 bg-gradient-to-t from-[#9890e3] to-[#b1f4cf] blur-3xl rounded-full opacity-20"></div>
+					<div className="absolute w-96 h-96 -right-[45%]  -bottom-24 bg-gradient-to-t from-[#9890e3] to-[#b1f4cf] blur-3xl rounded-full opacity-20"></div>
 					{amazingAnalytics.features.map((a, i) => {
 						return (
 							<IntroCard
