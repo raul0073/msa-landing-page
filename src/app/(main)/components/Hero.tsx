@@ -1,91 +1,56 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import Image from "next/image";
-import { useEffect, useState } from "react";
-import artMob from "./../../../../public/images/3424133_darker.png";
-import art from "./../../../../public/images/3424133_darker_tilted.png";
 import { homeLabels } from "./homeLabels";
 import { Highlight } from "./ImagesBarComp";
-
 const transition = { duration: 0.6, ease: "easeInOut" };
 
 export function ServicesHero() {
-	const [isMobile, setIsMobile] = useState<boolean>(false);
-
-	useEffect(() => {
-		// Check if the viewport width is less than or equal to 768px
-		const checkMobile = () => setIsMobile(window.innerWidth < 1050);
-
-		// Initial check
-		checkMobile();
-
-		// Add resize event listener
-		window.addEventListener("resize", checkMobile);
-
-		// Cleanup listener on component unmount
-		return () => window.removeEventListener("resize", checkMobile);
-	}, []);
-
 	return (
-		<div className="hero w-full min-h-[90dvh]">
-			<div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 pt-24">
-				<div className="flex flex-col lg:justify-center justify-between  gap-4  px-2">
-					<motion.h1
-						initial={{ opacity: 0, y: 10 }}
-						whileInView={{ opacity: 1, y: 0 }}
-						transition={transition}
-						viewport={{ once: true }}
-						className="w-full text-center lg:text-left d bg-clip-text text-transparent  bg-gradient-to-b from-neutral-400 to-neutral-50 dark:from-neutral-600 dark:to-white text-5xl lg:text-7xl font-sans py-2  relative z-20 font-bold tracking-tight">
-						{homeLabels.hero.text1_visual} <br />
-						{homeLabels.hero.text2_visual}{" "}
-						<Highlight className="p-0 h-4">{homeLabels.hero.pro}.</Highlight>
-					</motion.h1>
+		<section className="pt-24 px-4 pb-24">
+			<div className="container mx-auto relative">
+				<div className="flex justify-center ml-[50%] promo">
+					<div className="inline-flex py-1 text-xs md:text-sm md:px-4 px-2 bg-gradient-to-t from-purple-400 to-pink-400 rounded-full text-neutral-950 font-semibold">
+						Some Text Here ✨
+					</div>
+				</div>
 
-					<motion.h2
-						initial={{ opacity: 0, y: -10 }}
-						whileInView={{ opacity: 1, y: 0 }}
-						transition={transition}
-						viewport={{ once: true }}
-						className="max-w-[550px] text-white/70 text-wrap text-center lg:text-left mx-auto lg:mx-0">
-						{homeLabels.hero.subText} <br /> {homeLabels.hero.subText_highlight}{" "}
-						{homeLabels.hero.subText_after_highlight}
-					</motion.h2>
-
+				<motion.h1
+					initial={{ opacity: 0, y: 10 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					transition={transition}
+					viewport={{ once: true }}
+					className=" w-full text-center  d bg-clip-text text-transparent  bg-gradient-to-b from-neutral-400 to-neutral-50 dark:from-neutral-600 dark:to-white text-5xl md:text-7xl lg:text-8xl font-sans py-2  relative z-20 font-bold tracking-tight mt-6">
+					{homeLabels.hero.text1_visual} <br />
+					{homeLabels.hero.text2_visual}{" "}
+					<Highlight className="p-0 h-4">{homeLabels.hero.pro}.</Highlight>
+				</motion.h1>
+				<motion.p
+					initial={{ opacity: 0, y: -10 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					transition={{ duration: 0.6, ease: "easeIn", delay: 1.2 }}
+					viewport={{ once: true }}
+					className="text-center text-xl text-white/50 mt-8 max-w-2xl mx-auto">
+					{homeLabels.hero.subText} {homeLabels.hero.subText_highlight}{" "}
+					{homeLabels.hero.subText_after_highlight}
+				</motion.p>
+				<div className="flex justify-center gap-4 w-2/3 max-w-xl mx-auto mt-24">
 					<motion.div
-						initial={{ opacity: 0, scale: 0.9 }}
-						whileInView={{ opacity: 1, scale: 1 }}
-						transition={{ ...transition, delay: 2 }}
-						viewport={{ once: true }}
-						className="flex flex-col lg:flex-row gap-4 w-2/3 lg:w-fit mx-auto lg:mx-0">
+
+						className="w-full lg:p-6 flex flex-col gap-4 lg:justify-between  font-semibold lg:text-lg rounded-full heroBtns">
 						<Button
-							className="w-inherit p-6 font-semibold rounded-full mt-12"
-							variant={"outline"}>
-							{homeLabels.content.btn_learn}
-						</Button>
-						<Button
-							className="w-full p-6 font-semibold rounded-full mt-4 mb-12 lg:mb-0 lg:mt-12"
+							className="w-full lg:p-6 lg:text-lg rounded-full"
 							variant={"default"}>
 							{homeLabels.content.btn_ingage}
 						</Button>
+						<Button
+							className="w-full lg:p-6 lg:text-lg rounded-full"
+							variant={"secondary"}>
+							{homeLabels.content.btn_learn}
+						</Button>
 					</motion.div>
 				</div>
-
-				<motion.div
-					className=" lg:flex place-self-center lg:place-self-end"
-					initial={{ scale: 0.8, opacity: 0 }}
-					whileInView={{ scale: 1, opacity: 1 }}
-					transition={{ ...transition, delay: 0.2 }}
-					viewport={{ once: true }}>
-					<Image
-						src={isMobile ? artMob : art}
-						width={isMobile ? 200 : 450}
-						height={isMobile ? 250 : 450}
-						alt="hero_art"
-						className="hover:-translate-y-4 transition-transform duration-300 ease-in"
-					/>
-				</motion.div>
 			</div>
-		</div>
+		</section>
 	);
 }

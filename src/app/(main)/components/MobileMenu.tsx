@@ -9,14 +9,19 @@ import {
 import { MenuIcon } from "lucide-react";
 import Logo from "./Logo";
 import { Separator } from "@/components/ui/separator";
-
+export const navLinks = [
+	{ href: "/about", label: "About" },
+	{ href: "/contact", label: "Contact" },
+	{ href: "/services", label: "Services" },
+	{ href: "/pricing", label: "Pricing" },
+  ];
 function MobileMenu() {
 	return (
 		<Drawer>
 			<DrawerTrigger>
 				<MenuIcon className="md:hidden text-white" width={30} height={30}/>
 			</DrawerTrigger>
-			<DrawerContent className="rounded-none p-4 w-[200px] border-none bg-black">
+			<DrawerContent className="rounded-none p-4 w-[200px] border-none bg-black shadow-md shadow-white/15">
 				<DrawerHeader>
 					<DrawerTitle>
 						<Logo className="w-20 h-10" />
@@ -24,36 +29,17 @@ function MobileMenu() {
 					<Separator />
 				</DrawerHeader>
 				<ul className="space-y-8 text-center font-sans mt-24">
-					<li>
-						<a
-							href="/"
-							className="text-white/60 hover:text-white hover:tracking-wider  transition-all duration-100 ease-in-out">
-							Home
-						</a>
-					</li>
-
-					<li>
-						<a
-							href="/about"
-							className="text-white/60 hover:text-white hover:tracking-wider  transition-all duration-100 ease-in-out">
-							About
-						</a>
-					</li>
-					<li>
-						<a
-							href="/contact"
-							className="text-white/60 hover:text-white hover:tracking-wider  transition-all duration-100 ease-in-out">
-							Contact
-						</a>
-					</li>
-					<li>
-						<a
-							href="/login"
-							className="text-white/60 hover:text-white hover:tracking-wider  transition-all duration-100 ease-in-out">
-							Login
-						</a>
-					</li>
-				</ul>
+      {navLinks.map((link) => (
+        <li key={link.href}>
+          <a
+            href={link.href}
+            className="text-white/60 hover:text-white hover:tracking-wider transition-all duration-100 ease-in-out"
+          >
+            {link.label}
+          </a>
+        </li>
+      ))}
+    </ul>
 				<DrawerFooter className="text-center">
 				<div>
 				<span className="handwritingFont text-gray-400">r</span>

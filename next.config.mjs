@@ -17,7 +17,7 @@ const nextConfig = {
           },
           {
             protocol: 'https',
-            hostname: 'eleven-website.s3.il-central-1.amazonaws.com',
+            hostname: 'img.freepik.com',
           },
           {
             protocol: 'https',

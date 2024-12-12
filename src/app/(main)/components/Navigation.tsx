@@ -1,41 +1,49 @@
 "use client";
-
-import { homeLabels } from "./homeLabels";
-import MobileMenu from "./MobileMenu";
-
+import logo from "@/../public/images/msa_logo.png";
+import useScrollAndScreen from "@/app/customHooks/useScrollAndResize";
+import Image from "next/image";
+import { ButtonDefaultComp, ButtonOutlineComp } from "./Button";
+import MobileMenu, { navLinks } from "./MobileMenu";
 function ServicesNavbar() {
+	const { hasScrolled, screenLg } = useScrollAndScreen();
 	return (
-		<nav className="w-full flex justify-end items-center">
-			<div className="pt-8 pb-2 top-bar w-[90%] lg:w-[70%] mx-auto flex justify-between items-center border-b border-muted-foreground/10">
-				<div 						className="w-full text-left d bg-clip-text text-transparent  bg-gradient-to-tr from-neutral-400 to-neutral-50 dark:from-neutral-600 dark:to-white text-3xl  font-sans py-2  relative z-20 font-bold tracking-tight">
-					{homeLabels.msa}
+		<section className="w-full py-2 md:py-4 px-2 md:px-6 relative">
+			<div
+				className={`container max-w-5xl mx-auto rounded-full py-2 px-4 md:pr-2 items-center  ${
+					hasScrolled && screenLg ? "scrolledNav" : ""
+				}`}>
+				<div className="grid grid-cols-2 lg:grid-cols-3">
+					<div className="flex items-center">
+						<Image src={logo} alt="logo" className="h-9 md:h-10 w-auto" />
+					</div>
+					<div className="hidden lg:flex items-center justify-center">
+						<nav className="">
+							<ul className="flex gap-6 font-medium">
+								{navLinks.map((link) => (
+									<li key={link.href}>
+										<a
+											href={link.href}
+											className="text-white/60 hover:text-white hover:tracking-wider transition-all duration-100 ease-in-out">
+											{link.label}
+										</a>
+									</li>
+								))}
+							</ul>
+						</nav>
+					</div>
+					<div className="flex justify-end gap-2">
+						<MobileMenu />
+						<div className="hidden md:inline-flex gap-4">
+							<ButtonOutlineComp
+								title="Login"
+								className="bg-transparent text-accent"
+							/>
+							<ButtonDefaultComp title="Signup" className="" />
+						</div>
+					</div>
 				</div>
-				<MobileMenu />
-				<ul className="gap-4 uppercase hidden md:flex">
-					<li>
-						<a
-							href="/"
-							className="text-white/70 hover:text-white transition-colors duration-100 ease-in-out">
-							{homeLabels.nav.home}
-						</a>
-					</li>
-					<li>
-						<a
-							href="/about"
-							className="text-white/70 hover:text-white transition-colors duration-100 ease-in-out">
-							{homeLabels.nav.about}
-						</a>
-					</li>
-					<li>
-						<a
-							href="/login"
-							className="text-white/70 hover:text-white transition-colors duration-100 ease-in-out">
-							{homeLabels.nav.login}
-						</a>
-					</li>
-				</ul>
 			</div>
-		</nav>
+		</section>
 	);
 }
 
