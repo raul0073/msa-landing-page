@@ -36,13 +36,16 @@ export function ServicesHero() {
 				</motion.p>
 				<div className="flex justify-center gap-4 w-2/3 max-w-xl mx-auto mt-24">
 					<motion.div
-
+							initial={{ opacity: 0, scale:.2 }}
+							whileInView={{ opacity: 1, scale: 1 }}
+							transition={{ duration: .4, ease: "easeIn", delay: 1.8 }}
 						className="w-full lg:p-6 flex flex-col gap-4 lg:flex-row lg:justify-between  font-semibold lg:text-lg rounded-full heroBtns">
 						<Button
 							className="w-full lg:p-6 lg:text-lg rounded-full"
 							variant={"default"}>
 							{homeLabels.content.btn_ingage}
 						</Button>
+						
 						<Button
 							className="w-full lg:p-6 lg:text-lg rounded-full"
 							variant={"secondary"}>

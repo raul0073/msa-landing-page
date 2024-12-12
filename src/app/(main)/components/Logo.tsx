@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from './../../../../public/images/RML.png';
+import logo from './../../../../public/images/RML_orange_bars.png';
 import { cn } from "@/lib/utils";
 
 function Logo({className}: {className: string}) {

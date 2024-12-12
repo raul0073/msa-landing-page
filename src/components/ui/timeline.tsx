@@ -36,7 +36,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 					Our Services
 				</h2>
 				<p className=" text-sm md:text-base max-w-sm bg-gradient-to-r from-slate-500 to-gray-400 bg-clip-text text-transparent ">
-					Explore the innovative tools we&apos;ve crafted. <br />
+					Explore our latest innovative tool. <br />
 					These are the solutions we&apos;re most proud to share.
 				</p>
 			</div>

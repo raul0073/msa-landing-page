@@ -1,5 +1,5 @@
 "use client";
-import logo from "@/../public/images/RML.png";
+import logo from "@/../public/images/RML_orange_bars.png";
 import useScrollAndScreen from "@/app/customHooks/useScrollAndResize";
 import Image from "next/image";
 import { ButtonDefaultComp, ButtonOutlineComp } from "./Button";

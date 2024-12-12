@@ -101,7 +101,7 @@ export function IntroCard({ src, title, description }: IntroCardProps) {
 			</div>
 			<div className="py-3 space-y-4 mt-8">
 				<h3 className="text-white text-2xl">{title}</h3>
-				<p className="text-white/80 text-sm text-zinc-100 mt-8 leading-relaxed">
+				<p className="text-white/85 text-sm  mt-8 leading-relaxed">
 					{description}
 				</p>
 			</div>
