@@ -55,7 +55,7 @@ export const amazingAnalytics = {
 export function Introduction() {
 	return (
 		<section className="introduction w-full py-24 px-4 relative">
-			<div className="container ">
+			<div className="container mx-auto">
 				<div className="mb-24">
                 <h2 className="w-full text-center text-white text-4xl max-w-2xl mx-auto">
 					Your analytics need at one place.
