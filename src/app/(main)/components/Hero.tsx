@@ -24,7 +24,7 @@ export function ServicesHero() {
 					{homeLabels.hero.text1_visual} <br />
 					{homeLabels.hero.text2_visual}{" "}
 					<span className="relative">
-						<span>{homeLabels.hero.pro}.</span>
+						<span className="bg-clip-text text-transparent  bg-gradient-to-b from-neutral-400 to-neutral-50 dark:from-neutral-600 dark:to-white">{homeLabels.hero.pro}.</span>
 						<motion.span
 							initial={{ width: "0%", opacity: 0 }}
 							whileInView={{ width: "100%", opacity: 1 }}
