@@ -6,9 +6,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
-  @apply overflow-x-hidden
-}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
