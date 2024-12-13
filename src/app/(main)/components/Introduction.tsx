@@ -65,7 +65,7 @@ export function Introduction() {
 				</p>
                 </div>
 
-				<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 max-w-5xl mx-auto gap-20 my-20 md:my-40 px-4 overflow-x-clip">
+				<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 max-w-5xl mx-auto gap-20 my-20 md:my-40 px-4">
 					<div className="absolute w-96 h-96 -left-[35%] -top-24 bg-gradient-to-t from-[#9890e3] to-[#b1f4cf] blur-3xl rounded-full opacity-20"></div>
 					<div className="absolute w-64 h-64 right-0  -bottom-64 lg:-bottom-24 bg-gradient-to-t from-[#9890e3] to-[#b1f4cf] blur-[100px] lg:hidden overflow-x-clip rounded-full opacity-20"></div>
 					{amazingAnalytics.features.map((a, i) => {
