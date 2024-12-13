@@ -40,7 +40,7 @@ function Pricing() {
 				</h2>
 				<p className="mt-6 text-lg tracking-tight  text-zinc-600">
 					With so many features at your disposal, you might have to take a loan
-					to buy our monthly subscription.
+					to buy our yearly subscription.
 				</p>
 			</div>
 

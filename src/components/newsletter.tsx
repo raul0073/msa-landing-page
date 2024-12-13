@@ -23,7 +23,7 @@ export function NewsletterSubscriptionComp() {
   };
   return (
     <div className="h-[40rem] flex flex-col justify-center  items-center px-4">
-      <h2 className="mb-10 sm:mb-20 text-xl text-center sm:text-5xl text-white/80">
+      <h2 className="mb-10 sm:mb-20 text-3xl text-center sm:text-5xl text-white/80">
         Join Our Newsletter
       </h2>
       <PlaceholdersAndVanishInput
@@ -31,6 +31,7 @@ export function NewsletterSubscriptionComp() {
         onChange={handleChange}
         onSubmit={onSubmit}
       />
+      <small className="text-gray-500 w-full flex justify-start max-w-xl mt-2 mx-auto px-4">Promise, no spam 🕊️ (unless we find a really good meme).</small>
     </div>
   );
 }

@@ -5,13 +5,13 @@ export const plans = [
 	{
 		name: "Basic",
 		forWho: "Individuals or freelancers",
-		price: 19,
+		price: 9,
 		list: ["Up to 2 users", "5 projects", "1 website", "Email support"],
 	},
 	{
 		name: "Pro",
 		forWho: "Small to medium teams",
-		price: 39,
+		price: 29,
 		list: [
 			"Up to 20 users",
 			"50 projects",
@@ -74,9 +74,9 @@ function PricingCards() {
 					<p className="mt-4 text-sm text-gray-500">{starterPlan.forWho}</p>
 					<p className="mt-8">
 						<span className="text-5xl font-extrabold text-gray-900">
-							${starterPlan.price}
+						${isMonthView ? `${starterPlan.price}` : `${(starterPlan.price * 7 * 0.9).toFixed(0)}`}
 						</span>
-						<span className="text-base font-medium text-gray-500">/mo</span>
+						<span className="text-base font-medium text-gray-500">{isMonthView ? "/mo" : "/yr"}</span>
 					</p>
 					<Button className="text-white inline-flex items-center justify-center bg-gradient-to-b from-[#464d55] to-[#25292e] text-base px-6 transition duration-150 shadow-[0_10px_20px_rgba(0,_0,_0,_.1),0_3px_6px_rgba(0,_0,_0,_.05)] hover:shadow-[rgba(0,_1,_0,_.2)_0_2px_8px] active:outline-none hover:opacity-80 rounded-2xl py-2 w-full mt-8">
 						Pay now
@@ -125,9 +125,9 @@ function PricingCards() {
 					<p className="mt-4 text-sm ">{proPlan.forWho}</p>
 					<p className="mt-8">
 						<span className="text-5xl font-extrabold text-white">
-							${proPlan.price}
+						${isMonthView ? `${proPlan.price}` : `${(proPlan.price * 7 * 0.9).toFixed(0)}`}
 						</span>
-						<span className="text-base font-medium text-gray-100">/mo</span>
+						<span className="text-base font-medium text-gray-100">{isMonthView ? "/mo" : "/yr"}</span>
 					</p>
 					<Button className="text-white inline-flex items-center justify-center bg-gradient-to-b from-[#464d55] to-[#25292e] text-base px-6 transition duration-150 shadow-[0_10px_20px_rgba(0,_0,_0,_.1),0_3px_6px_rgba(0,_0,_0,_.05)] hover:shadow-[rgba(0,_1,_0,_.2)_0_2px_8px] active:outline-none hover:opacity-80 rounded-2xl py-2 w-full mt-8">
 						Start Today
@@ -177,9 +177,9 @@ function PricingCards() {
 					<p className="mt-4 text-sm text-gray-500">{masterPlan.forWho}</p>
 					<p className="mt-8">
 						<span className="text-5xl font-extrabold text-gray-900">
-							${masterPlan.price}
+						${isMonthView ? `${masterPlan.price}` : `${(masterPlan.price * 7 * 0.9).toFixed(0)}`}
 						</span>
-						<span className="text-base font-medium text-gray-500">/mo</span>
+						<span className="text-base font-medium text-gray-500">{isMonthView ? "/mo" : "/yr"}</span>
 					</p>
 					<Button className="text-white inline-flex items-center justify-center bg-gradient-to-b from-[#464d55] to-[#25292e] text-base px-6 transition duration-150 shadow-[0_10px_20px_rgba(0,_0,_0,_.1),0_3px_6px_rgba(0,_0,_0,_.05)] hover:shadow-[rgba(0,_1,_0,_.2)_0_2px_8px] active:outline-none hover:opacity-80 rounded-2xl py-2 w-full mt-8">
 						Get Started

@@ -14,31 +14,31 @@ export const amazingAnalytics = {
 		{
 			title: "Charts, graphs, and everything at your fingertips",
 			description:
-				"Bar graphs, Pie Charts, Line graphs, Area graphs, you name it. We have it. And if we don't, we will add it.",
+				"Bar graphs, Pie Charts, Line graphs, Area graphs, you name it. We have it. And if we don't, we will add it for you.",
 			icon: art1, // Example icon
 		},
 		{
-			title: "Create teams. Invite your friends and families.",
+			title: "Create teams. Invite colleagues.",
 			description:
-				"Creation of teams is a breeze. Invite your friends to Foxtrot Analytics so that they can bang their head against a pie chart.",
+				"Creation of teams is a breeze. Invite your colleagues to Render Metrics Labs so that they can bang their head against a pie chart too.",
 			icon: art2, // Example icon
 		},
 		{
 			title: "Self-host your analytics. Own your mistakes.",
 			description:
-				"With Foxtrot Analytics, you can self-host in case you don't wish to pay us or see us grow to a billion-dollar company.",
+				"With RML, you can self-host in case you don't wish to pay us or see us grow to a billion-dollar company.",
 			icon: art3, // Example icon
 		},
 		{
 			title: "We don't track you. We don't sell your data.",
 			description:
-				"Lol. We don't even have a database. We are just a bunch of guys who are trying to make a living. wink wink.",
+				"Lol. We don't even have a database, I'ts all written on papers somewhere. wink wink.",
 			icon: art4, // Example icon
 		},
 		{
 			title: "Dark mode is here!",
 			description:
-				"Dark mode is as necessary to a developer as a cup of coffee. We have both. We won't give you coffee though.",
+				"Dark mode is as necessary to a developer as a cup of coffee. We have both. No coffee though.",
 			icon: art5, // Example icon
 		},
 		{

@@ -34,17 +34,17 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 			ref={containerRef}>
 			<div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
 				<h2 className="text-4xl max-w-2xl mb-4 text-white">Our Services</h2>
-				<div></div>
-				<p className=" text-sm md:text-base max-w-sm bg-gradient-to-r from-slate-500 to-gray-400 bg-clip-text text-transparent ">
-					Explore our latest innovative tool. <br />
-					These are the solutions we&apos;re most proud to share.
-				</p>
-				<div className="flex gap-2 mt-4">
+				<div className="flex gap-2 mb-4">
 					<Tag text="Support" />
 					<Tag text="Guidance" />
 					<Tag text="Flexibility" />
 
 				</div>
+				<p className=" text-sm md:text-base max-w-sm bg-gradient-to-r from-slate-500 to-gray-400 bg-clip-text text-transparent ">
+					Explore our latest innovative tool. <br />
+					These are the solutions we&apos;re excited to share.
+				</p>
+				
 			</div>
 
 			<div ref={ref} className="relative max-w-7xl mx-auto pb-20">
