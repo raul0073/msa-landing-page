@@ -38,6 +38,7 @@ function Pricing() {
 				<h2 className="font-display text-3xl tracking-tight text-zinc-900 sm:text-4xl md:text-5xl">
 					Our pricing will surprise you
 				</h2>
+
 				<p className="mt-6 text-lg tracking-tight  text-zinc-600">
 					With so many features at your disposal, you might have to take a loan
 					to buy our yearly subscription.

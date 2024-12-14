@@ -1,6 +1,5 @@
 import { Separator } from "@/components/ui/separator";
 import { ImGithub, ImLinkedin, ImTwitter } from "react-icons/im";
-import { homeLabels } from "./homeLabels";
 import Logo from "./Logo";
 import { navLinks } from "./MobileMenu";
 
@@ -24,7 +23,12 @@ function ServicesFooter() {
 						))}
 					</ul>
 				</div>
-				<Separator className="w-1/3 mx-auto mt-6" />
+				<Separator
+					className="w-1/2 md:w-1/3 mx-auto  bg-[radial-gradient(circle_at_center,
+                    _var(--tw-gradient-stops))]  
+                    from-black via-lime-400  
+                    to-gray-black"
+				/>
 				<div className="mt-6 w-full flex justify-center gap-8">
 					<ImGithub
 						className="text-white/70 cursor-pointer hover:skew-x-3"
@@ -40,12 +44,8 @@ function ServicesFooter() {
 					/>
 				</div>
 				<p className="text-center text-sm text-white/70 font-sans font-semibold absolute bottom-0 left-1/2 -translate-x-1/2">
-					<span className="text-muted-foreground text-xs ">
-						{homeLabels.footer.trademark}{" "}
-					</span>
 					<span className="handwritingFont text-gray-400 font-normal">r</span>
 					<span className="handwritingFont text-yellow-400 font-normal">m</span>
-					.
 				</p>
 			</div>
 		</footer>
