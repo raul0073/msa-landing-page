@@ -10,8 +10,8 @@ function ServicesFooter() {
 	return (
 		<footer className="border-t border-slate-900/5 py-10 max-w-6xl mx-auto px-8 relative">
 			<div className="flex flex-col justify-center items-center py-10 ">
-				<div className="flex flex-col justify-center items-center pt-10 ">
-					<Logo className="w-10 h-auto" />
+				<div className="flex flex-col justify-center items-center pt-10 mb-4">
+					<Logo className="w-12 h-auto" alternative />
 				</div>
 				<div className="mt-6 flex justify-center gap-8">
 					<ul className="flex gap-8">
@@ -29,21 +29,24 @@ function ServicesFooter() {
 					</ul>
 				</div>
 				<Separator
-					className={`sep w-1/2 md:w-1/3 mx-auto bg-gradient-to-r from-black transition-all duration-300 ease-in-out ${
-						isLinkHover ? "via-lime-200" : "via-lime-400"
-					}`}
+					className={`sep w-2/3 md:w-1/3 mx-auto bg-[radial-gradient(circle_at_top_left,
+                    _var(--tw-gradient-stops))]
+                    from-black  
+                    to-black ${
+						isLinkHover ? "via-lime-400" : "via-violet-200"
+					} to-black`}
 				/>
-				<div className="mt-6 w-full flex justify-center gap-8">
+				<div className="mt-8 w-full flex justify-center gap-8">
 					<ImGithub
-						className="text-white/70 cursor-pointer hover:skew-x-3"
+						className="text-white/70 cursor-pointer hover:skew-x-4"
 						width={50}
 					/>
 					<ImTwitter
-						className="text-white/70 cursor-pointer hover:skew-x-3"
+						className="text-white/70 cursor-pointer hover:skew-x-6"
 						width={50}
 					/>
 					<ImLinkedin
-						className="text-white/70 cursor-pointer hover:skew-x-3"
+						className="text-white/70 cursor-pointer hover:skew-x-2"
 						width={50}
 					/>
 				</div>
