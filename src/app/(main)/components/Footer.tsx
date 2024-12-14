@@ -1,9 +1,12 @@
+"use client";
 import { Separator } from "@/components/ui/separator";
+import { useState } from "react";
 import { ImGithub, ImLinkedin, ImTwitter } from "react-icons/im";
 import Logo from "./Logo";
 import { navLinks } from "./MobileMenu";
 
 function ServicesFooter() {
+	const [isLinkHover, setIsLinkHover] = useState<boolean>(false);
 	return (
 		<footer className="border-t border-slate-900/5 py-10 max-w-6xl mx-auto px-8 relative">
 			<div className="flex flex-col justify-center items-center py-10 ">
@@ -16,6 +19,8 @@ function ServicesFooter() {
 							<li key={link.href}>
 								<a
 									href={link.href}
+									onMouseOver={() => setIsLinkHover(true)}
+									onMouseLeave={() => setIsLinkHover(false)}
 									className="text-white/40 hover:text-white hover:tracking-wider transition-all duration-100 ease-in-out">
 									{link.label}
 								</a>
@@ -24,10 +29,9 @@ function ServicesFooter() {
 					</ul>
 				</div>
 				<Separator
-					className="w-1/2 md:w-1/3 mx-auto  bg-[radial-gradient(circle_at_center,
-                    _var(--tw-gradient-stops))]  
-                    from-black via-lime-400  
-                    to-gray-black"
+					className={`sep w-1/2 md:w-1/3 mx-auto bg-gradient-to-r from-black transition-all duration-300 ease-in-out ${
+						isLinkHover ? "via-lime-200" : "via-lime-400"
+					}`}
 				/>
 				<div className="mt-6 w-full flex justify-center gap-8">
 					<ImGithub

@@ -21,7 +21,7 @@ export const homeLabels = {
         subHeader: "We've got the tools to bring your data to life. Experience simplicity, speed, and precision — all in one place.",
         unleash: "Unleash the Power of Your Data",
         btn_learn: "Learn How It Works",
-        btn_ingage: "Get Started For Free",
+        btn_ingage: "Get Started",
         btn_more: "Show Me A Demo"
     },
     footer: {
