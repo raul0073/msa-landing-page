@@ -99,7 +99,7 @@ function PricingCards() {
 											<g
 												id="Page-1"
 												stroke="none"
-												stroke-width="1"
+												strokeWidth="1"
 												fill="#424242"
 												className="z-30"
 												fill-rule="evenodd">
@@ -120,7 +120,7 @@ function PricingCards() {
 						</ul>
 					</div>
 				</div>
-				<div className="rounded-2xl px-8 py-12 relative bg-primary text-white">
+				<div className="rounded-2xl px-8 py-12 relative bg-lime-500 text-white">
 					<h3 className="font-medium text-white text-2xl">{proPlan.name}</h3>
 					<p className="mt-4 text-sm ">{proPlan.forWho}</p>
 					<p className="mt-8">
@@ -149,7 +149,7 @@ function PricingCards() {
 											<g
 												id="Page-1"
 												stroke="none"
-												stroke-width="1"
+												strokeWidth="1"
 												fill="#424242"
 												className="z-30"
 												fill-rule="evenodd">
@@ -202,7 +202,7 @@ function PricingCards() {
 											<g
 												id="Page-1"
 												stroke="none"
-												stroke-width="1"
+												strokeWidth="1"
 												fill="#424242"
 												className="z-30"
 												fill-rule="evenodd">

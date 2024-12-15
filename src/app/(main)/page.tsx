@@ -1,11 +1,14 @@
-import { Fragment } from "react";
-import Coops from "./components/Coops";
-import { TimelineDemo } from "./components/Features";
-import { ServicesHero } from "./components/Hero";
-import { Introduction } from "./components/Introduction";
-import { Parallax } from "./components/Parallax";
-import Pricing from "./components/Pricing";
 import { NewsletterSubscriptionComp } from "@/components/newsletter";
+import { Fragment } from "react";
+import Coops from "./components/(coops)/Coops";
+import { Introduction } from "./components/(features)/Introduction";
+import { ServicesHero } from "./components/(hero)/Hero";
+import { Parallax } from "./components/(parallax)/Parallax";
+import Pricing from "./components/(pricinig)/Pricing";
+import { ServicesTimeline } from "./components/(services)/ServicesTimeline";
+import Testimonials from "./components/(testimonials)/Testimonials";
+
+
 
 export default function Home() {
 	return (
@@ -13,9 +16,10 @@ export default function Home() {
 			<ServicesHero />
 			<Parallax />
 			<Introduction />
-			<TimelineDemo />
-			<Coops />
+			<ServicesTimeline />
+			<Testimonials />
 			<Pricing />
+			<Coops />
 			<NewsletterSubscriptionComp />
 		</Fragment>
 	);

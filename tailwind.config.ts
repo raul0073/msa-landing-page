@@ -9,6 +9,15 @@ const config: Config = {
   ],
   theme: {
   	extend: {
+		animation: {
+			move: "move 5s linear infinite",
+		  },
+		  keyframes: {
+			move: {
+			  "0%": { transform: "translateX(-200px)" },
+			  "100%": { transform: "translateX(200px)" },
+			},
+		  },
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
@@ -58,6 +67,9 @@ const config: Config = {
   		}
   	}
   },
-  plugins: [require("tailwindcss-animate")],
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  plugins: [require("tailwindcss-animate"),
+	require('tailwind-scrollbar'),
+  ],
 };
 export default config;
