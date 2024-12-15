@@ -29,7 +29,7 @@ export function LandingPageDialogComp({
 			<DialogTrigger className="w-full cursor-pointer">
 				{children}
 			</DialogTrigger>
-			<DialogContent className="w-96 mx-auto h-2/3 bg-gradient-to-tl from-neutral-900 to-black border-lime-400">
+			<DialogContent className="w-80 mx-auto h-2/3 bg-gradient-to-tl from-neutral-900 to-black border-lime-400">
 				<DialogHeader>
 					<DialogTitle className="uppercase font-extrabold text-white">
 						{website}
@@ -70,7 +70,7 @@ export function SaasPageDialogComp({
 			<DialogTrigger className="w-full cursor-pointer">
 				{children}
 			</DialogTrigger>
-			<DialogContent className="w-full lg:w-2/3 mx-auto h-fit bg-gradient-to-tl from-neutral-900 to-black border-lime-400">
+			<DialogContent className="w-80 lg:w-2/3 mx-auto h-fit bg-gradient-to-tl from-neutral-900 to-black border-lime-400">
 				<DialogHeader className="h-fit text-left">
 					<DialogTitle className="uppercase font-extrabold text-white">
 						{website}

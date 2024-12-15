@@ -5,11 +5,11 @@ import tahel from "@/../public/customers/tahel.jpg";
 import Image from "next/image";
 function Coops() {
 	return (
-		<section className="coops py-20 md:py-40">
+		<section className="coops">
 			<div className="max-w-xl mx-auto text-center xl:max-w-none relative z-10 py-20 px-4">
-				<h2 className="text-4xl font-medium text-pretty text-white">
+				<h2 className="text-3xl text-center sm:text-5xl text-white/90 mt-24">
 					Already Trusted by These <br />
-					<span className="">Market Leaders</span>
+					<span className="text-white">Market Leaders</span>
 				</h2>
 				<p className="text-lg text-white/50 mt-6 max-w-2xl mx-auto">
                 {`Don’t worry, we’ll make room for you too.`}
@@ -23,7 +23,7 @@ function Coops() {
 							height={100}
 							className="object-contain  p-1 w-12 h-auto bg-black rounded-xl "
 						/>
-						<p className="text-nowrap uppercase text-xs font-bold text-black/60 pt-4">
+						<p className="text-nowrap uppercase text-sm font-bold text-neutral-950 pt-4 ">
 							Eleven Academy
 						</p>
 					</div>
