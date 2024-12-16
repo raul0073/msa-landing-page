@@ -57,7 +57,7 @@ export function ServicesHero() {
 						transition={{ duration: 0.4, ease: "easeIn", delay: 2 }}
 						className="w-full lg:p-6 flex flex-col gap-4 lg:flex-row lg:justify-between  font-semibold lg:text-lg rounded-full">
 						<Button
-							className="w-full lg:p-6 lg:text-lg rounded-full "
+							className="w-full p-6 lg:text-lg rounded-full "
 							variant={"default"}>
 							{homeLabels.content.btn_ingage}
 						</Button>
@@ -69,7 +69,7 @@ export function ServicesHero() {
 						transition={{ duration: 0.4, ease: "easeIn", delay: 2 }}
 						className="w-full lg:p-6 flex flex-col gap-4 lg:flex-row lg:justify-between  font-semibold lg:text-lg rounded-full ">
 						<Button
-							className="w-full lg:p-6 lg:text-lg rounded-full"
+							className="w-full p-6 lg:text-lg rounded-full font-medium"
 							variant={"secondary"}>
 							{homeLabels.content.btn_learn}
 						</Button>

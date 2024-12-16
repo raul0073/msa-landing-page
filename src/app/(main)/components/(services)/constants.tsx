@@ -7,6 +7,11 @@ import longImglrv from "@/../public/images/landing_pages/lrv_full.png";
 import landing1 from "@/../public/images/landing_pages/www.eleven-academy.co.il_.png";
 import saas2 from "@/../public/images/saas/synagogue_entry.png";
 import saas1 from "@/../public/images/saas/synagogue_transactions.png";
+import saas3 from "@/../public/images/saas/experimental/dashboard.png";
+import saas4 from "@/../public/images/saas/experimental/sub.png";
+import saasElevenInCard1 from "@/../public/images/saas/experimental/report.png";
+import saasElevenInCard2 from "@/../public/images/saas/experimental/schedule.png";
+import saasElevenInCard3 from "@/../public/images/saas/experimental/sub.png";
 import Image from "next/image";
 import { ReactNode } from "react";
 
@@ -86,8 +91,40 @@ export type LandingPageTimelineBoxType = {
 
 export const sassList = [
 	{
-		wbsite: "Synagogue Management System",
+		wbsite: "Eleven Academy Admin Panel",
 		url: "www.eleven-academy.co.il",
+		coverImg: (
+			<Image
+				src={saas3}
+				alt="startup template"
+				width={500}
+				height={500}
+				className={timelineImageClass}
+			/>
+		),
+		parentClassName: "",
+		images: [saasElevenInCard1, saasElevenInCard2, saasElevenInCard3],
+	},
+	{
+		wbsite: "Synagogue Management System",
+		url: "www.lrv.co.il",
+		fullpageImg: longImglrv,
+		coverImg: (
+			<Image
+				src={saas2}
+				alt="startup template"
+				width={500}
+				height={500}
+				className={timelineImageClass}
+			/>
+		),
+		parentClassName: "",
+		images: [saas1, saas2],
+	},
+	{
+		wbsite: "Synagogue Management System",
+		url: "www.lrv.co.il",
+		fullpageImg: longImglrv,
 		coverImg: (
 			<Image
 				src={saas1}
@@ -106,38 +143,7 @@ export const sassList = [
 		fullpageImg: longImglrv,
 		coverImg: (
 			<Image
-				src={saas2}
-				alt="startup template"
-				width={500}
-				height={500}
-				className={timelineImageClass}
-			/>
-		),
-		parentClassName: "",
-	},
-	{
-		wbsite: "Synagogue Management System",
-		url: "www.lrv.co.il",
-		fullpageImg: longImglrv,
-		coverImg: (
-			<Image
-				src={saas2}
-				alt="startup template"
-				width={500}
-				height={500}
-				className={timelineImageClass}
-			/>
-		),
-		parentClassName: "",
-		images: [app1, app2, app3],
-	},
-	{
-		wbsite: "Synagogue Management System",
-		url: "www.lrv.co.il",
-		fullpageImg: longImglrv,
-		coverImg: (
-			<Image
-				src={saas2}
+				src={saas4}
 				alt="startup template"
 				width={500}
 				height={500}

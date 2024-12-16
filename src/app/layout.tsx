@@ -15,8 +15,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-	title: "RML | Data Visualizations",
-	description: "Render Metrics Labs - Data Management & Visualizations",
+	title: "RMS | Data Visualizations",
+	description: "Render Metrics Studio - Data Management & Visualizations",
 };
 
 export default function RootLayout({

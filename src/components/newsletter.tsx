@@ -4,13 +4,17 @@ import { PlaceholdersAndVanishInput } from "./ui/placeholders-and-vanish-input";
 
 export function NewsletterSubscriptionComp() {
 	const placeholders = [
-		"If I Hit the Crossbar is it on Target? 🥅",
-		"Who is Maksim Tsygalko? ⚽",
-		"Do You Know Freddie Addo? ⚽",
-		"Diego Maradona Liked to Party 💊",
-		"Will Arsenal Ever Win the League? 🏆",
-		"Who is The Real GOAT? 🐐",
-	];
+		"Sign up—what’s one more regret? 🖤",
+		"Your inbox was feeling lonely anyway... 🕳️",
+		"This will totally change your life. Or not. 🤷",
+		"Newsletter? More like existential dread. 📬",
+		"Join now. We know your IP 🕵️",
+		"Don’t worry, it’s only mildly annoying. 🙃",
+		"Because bad decisions are character-building. 🫠",
+		"Why resist the inevitable? 🌓",
+		"It’s either this or staring into the void. 🌌",
+		"We’ve got cookies. Just kidding. 🍪❌",
+	  ];
 
 	const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
 		console.log(e.target.value);
@@ -21,7 +25,8 @@ export function NewsletterSubscriptionComp() {
 	};
 	return (
 		<div className="h-[40rem] flex flex-col justify-center  items-center px-4">
-			<h2 className="mb-10 sm:mb-20 text-3xl text-center sm:text-5xl text-white/80">
+					<h2 className="mb-10 sm:mb-20 text-3xl text-center sm:text-5xl bg-clip-text text-transparent  bg-gradient-to-b from-neutral-300 to-neutral-50 dark:from-neutral-600 dark:to-white">
+
 				Join Our Newsletter
 			</h2>
 			<PlaceholdersAndVanishInput

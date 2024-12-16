@@ -1,5 +1,5 @@
 "use client";
-import logo from "@/../public/images/rml_v2.png";
+import logo from "@/../public/images/RML_orange_bars.png";
 import useScrollAndScreen from "@/app/customHooks/useScrollAndResize";
 import Image from "next/image";
 import MobileMenu, { navLinks } from "./MobileMenu";
@@ -14,7 +14,7 @@ export default function Navbar() {
 				}`}>
 				<div className="grid grid-cols-2 lg:grid-cols-3">
 					<div className="flex items-center">
-						<Image src={logo} alt="logo" className="h-9 md:h-10 w-auto" />
+						<Image src={logo} alt="logo" className="h-8 md:h-9 w-auto" />
 					</div>
 					<div className="hidden lg:flex items-center justify-center">
 						<nav className="">

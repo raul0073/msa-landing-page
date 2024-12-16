@@ -42,7 +42,7 @@ export function FlipWordsDemo() {
     <div className="flex justify-center items-center px-4">
       <div className="lg:text-4xl mx-auto font-normal text-neutral-300 text-center">
         Crafting <br />
-        <FlipWords words={words} className='text-amber-400 text-nowrap'/>Applications 
+        <FlipWords words={words} className='text-lime-400 text-nowrap'/>Applications 
         
       </div>
     </div>

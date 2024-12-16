@@ -1,5 +1,4 @@
 import type { Config } from "tailwindcss";
-
 const config: Config = {
     darkMode: ["class"],
     content: [
@@ -17,6 +16,7 @@ const config: Config = {
 			  "0%": { transform: "translateX(-200px)" },
 			  "100%": { transform: "translateX(200px)" },
 			},
+	
 		  },
   		colors: {
   			background: 'hsl(var(--background))',
@@ -71,5 +71,7 @@ const config: Config = {
   plugins: [require("tailwindcss-animate"),
 	require('tailwind-scrollbar'),
   ],
-};
-export default config;
+} satisfies Config;
+
+  export default config
+
