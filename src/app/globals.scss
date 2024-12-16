@@ -117,7 +117,34 @@ body {
 .highlights {
 	transform: skewY(-50deg) !important;
 }
-
+.aaa{
+	@keyframes border-move {
+		0% {
+		  border-image-source: linear-gradient(90deg, #ff5733, #ffbd33, #33ff57, #3383ff);
+		  border-image-slice: 1;
+		}
+		25% {
+		  border-image-source: linear-gradient(90deg, #3383ff, #ff5733, #ffbd33, #33ff57);
+		  border-image-slice: 1;
+		}
+		50% {
+		  border-image-source: linear-gradient(90deg, #33ff57, #3383ff, #ff5733, #ffbd33);
+		  border-image-slice: 1;
+		}
+		75% {
+		  border-image-source: linear-gradient(90deg, #ffbd33, #33ff57, #3383ff, #ff5733);
+		  border-image-slice: 1;
+		}
+		100% {
+		  border-image-source: linear-gradient(90deg, #ff5733, #ffbd33, #33ff57, #3383ff);
+		  border-image-slice: 1;
+		}
+	  }
+	  
+	  .animate-border-move {
+		animation: border-move 3s linear infinite;
+	  }
+}
 div.container.scrolledNav {
 	position: fixed;
 	top: 15px;

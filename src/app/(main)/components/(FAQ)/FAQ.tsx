@@ -81,7 +81,7 @@ function FAQ() {
 		<section className="faq py-24">
 			<div className="container mx-auto">
 				<h2 className="w-full text-center text-white text-4xl  md:text-5xl  max-w-2xl mx-auto mt-6">
-				Still Have Questions?
+				Questions?
 				</h2>
 
 				<div className="mt-[5rem] flex flex-col gap-6 w-full max-w-xl mx-auto p-1">

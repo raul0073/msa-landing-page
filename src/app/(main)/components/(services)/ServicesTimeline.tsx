@@ -22,7 +22,7 @@ export function ServicesTimeline() {
 				<div>
 					<p className="bg-clip-text text-transparent  bg-gradient-to-b from-neutral-400 to-neutral-50 dark:from-neutral-600 dark:to-white text-xs md:text-sm font-normal mb-8">
 						We specialize in creating tailored digital solutions to elevate our
-						sorry, <span className="font-semibold">your</span> brand.
+						brand.  Scratch that, we mean <span className="font-semibold italic">your</span> brand.
 					</p>
 
 					<div className="grid grid-cols-3 gap-4">
@@ -144,8 +144,8 @@ export function ServicesTimeline() {
 		},
 	];
 	return (
-		<div className="w-full px-4">
+		<section className="w-full px-4" id="services">
 			<Timeline data={data} />
-		</div>
+		</section>
 	);
 }

@@ -10,10 +10,11 @@ import { Separator } from "@/components/ui/separator";
 import { MenuIcon } from "lucide-react";
 import Logo from "../Logo";
 export const navLinks = [
-	{ href: "/about", label: "About" },
-	{ href: "/contact", label: "Contact" },
-	{ href: "/services", label: "Services" },
-	{ href: "/pricing", label: "Pricing" },
+	{ href: "#about", label: "About" },
+	
+	{ href: "#services", label: "Services" },
+	{ href: "#pricing", label: "Pricing" },
+	{ href: "#contact", label: "Contact" },
 ];
 function MobileMenu() {
 	return (
