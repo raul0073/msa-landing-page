@@ -80,7 +80,7 @@ function FAQ() {
 	return (
 		<section className="faq py-24">
 			<div className="container mx-auto">
-				<h2 className="w-full text-center text-white text-4xl  md:text-5xl max-w-2xl mx-auto mt-6">
+				<h2 className="w-full text-center text-white text-4xl  md:text-5xl  max-w-2xl mx-auto mt-6">
 				Still Have Questions?
 				</h2>
 

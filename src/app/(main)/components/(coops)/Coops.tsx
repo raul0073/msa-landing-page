@@ -14,9 +14,9 @@ const coopsList = [
 ];
 function Coops() {
 	return (
-		<section className="coops py-24 md:py-44 overflow-hidden">
+		<section className="coops py-24 overflow-hidden">
 			<div className="container mx-auto">
-				<h2 className="text-4xl  md:text-5xl text-center  text-white/90 mt-24">
+				<h2 className="text-4xl  md:text-5xl text-center  text-white/90 mt-24  font-display  tracking-tight ">
 					Already Trusted by These <br />
 					<span className="text-primary">Market Leaders</span>
 				</h2>

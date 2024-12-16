@@ -59,7 +59,7 @@ export function Introduction() {
 		<section className="introduction w-full h-fit py-24 px-4 relative">
 			<div className="container mx-auto">
 				<div className="mb-24">
-					<h2 className="w-full text-center text-white text-4xl max-w-2xl mx-auto">
+					<h2 className="w-full text-center text-white text-4xl  md:text-5xl max-w-2xl mx-auto">
 						Your analytics need at one place.
 					</h2>
 					<p className="pt-8 text-lg w-full text-center text-white/70">

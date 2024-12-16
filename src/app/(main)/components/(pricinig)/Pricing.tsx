@@ -35,7 +35,7 @@ function Pricing() {
 	return (
 		<section className="min-h-[40rem] px-4 bg-white py-20 md:py-40 relative group overflow-hidden">
 			<div className="max-w-xl md:mx-auto md:text-center xl:max-w-none relative z-10">
-				<h2 className="font-display text-3xl tracking-tight text-zinc-900 sm:text-4xl md:text-5xl">
+				<h2 className="font-display text-4xl  md:text-5xl tracking-tight text-zinc-900 sm:text-4xl ">
 					Our pricing will surprise you
 				</h2>
 

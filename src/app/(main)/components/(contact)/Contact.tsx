@@ -4,7 +4,7 @@ function Contact() {
 	return (
 		<section className="contct-page h-[70vh] py-24 md:py-40 ">
 			<div className="container mx-auto">
-				<h2 className="text-4xl  md:text-5xl text-center bg-clip-text text-transparent  bg-gradient-to-b from-neutral-300 to-neutral-50 dark:from-neutral-600 dark:to-white">
+				<h2 className="text-4xl  md:text-5xl pt-12  text-center bg-clip-text text-transparent  bg-gradient-to-b from-neutral-300 to-neutral-50 dark:from-neutral-600 dark:to-white">
 					{`Let's Build Your Website`} <span className="text-primary"> Today!</span>
 				</h2>
 
