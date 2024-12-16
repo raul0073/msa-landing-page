@@ -11,9 +11,9 @@ export default function Footer() {
 		<footer className="border-t border-slate-900/5 py-10 max-w-6xl mx-auto px-8 relative">
 			<div className="flex flex-col justify-center items-center py-10 ">
 				<div className="flex flex-col justify-center items-center pt-10 mb-4">
-					<Logo className="w-8 h-auto"  />
+					<Logo className="w-8 h-auto" alternative />
 				</div>
-				<div className="mt-6 flex justify-center gap-8">
+				<div className="mt-4 flex justify-center gap-8">
 					<ul className="flex gap-8">
 						{navLinks.map((link) => (
 							<li key={link.href}>

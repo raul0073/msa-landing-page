@@ -68,7 +68,7 @@ export function Introduction() {
 				</div>
 
 				<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 max-w-5xl mx-auto gap-20 my-20 md:my-40 px-4">
-					<div className="absolute w-96 h-96 -left-[20rem] -top-48 bg-gradient-to-t from-[#9890e3] to-[#b1f4cf] blur-3xl rounded-full opacity-20"></div>
+					{/* <div className="absolute w-96 h-96 -left-[20rem] -top-48 bg-gradient-to-t from-[#9890e3] to-[#b1f4cf] blur-3xl rounded-full opacity-20"></div> */}
 					{/* <div className="absolute w-64 h-64 right-0  -bottom-64 lg:-bottom-24 bg-gradient-to-t from-[#9890e3] to-[#b1f4cf] blur-3xl lg:hidden overflow-x-clip rounded-full opacity-20"></div> */}
 					{amazingAnalytics.features.map((a, i) => {
 						return (
@@ -97,7 +97,7 @@ export function IntroCard({ icon, title, description }: IntroCardProps) {
 		<div className="introCard flex flex-col px-4 relative">
 			<div className="h-10 w-10 rounded-2xl  backdrop-blur-sm flex items-center justify-center  bg-white bg-grid-extrasmall-zinc-200  overflow-hidden shadow-lime-100 shadow-[0_10px_90px_rgba(8,_112,_184,_0.7)]">
 				<IntroCardIcon icon={icon}  />
-				<div className="absolute inset-0 bg-white [mask-image:linear-gradient(to_bottom,transparent,white_4rem,white_calc(100%-4rem),transparent)] z-40"></div>
+				{/* <div className="absolute inset-0 bg-white [mask-image:linear-gradient(to_bottom,transparent,white_4rem,white_calc(100%-4rem),transparent)] z-40"></div> */}
 			</div>
 			<div className="py-3 space-y-4 mt-8">
 				<h3 className="text-white text-2xl">{title}</h3>

@@ -123,7 +123,8 @@ div.container.scrolledNav {
 	top: 15px;
 	left: 50%;
 	transform: translateX(-50%);
-	background-color: black;
+	background-color: rgba(0, 0, 0, 0.800);
+	backdrop-filter: blur(10px);
 	border: 1px sold rgb(207, 207, 207);
 	margin: 0 auto;
 	z-index: 100;
