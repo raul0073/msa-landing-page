@@ -44,7 +44,7 @@ function ContactForm() {
                   <FormControl>
                   <Input
 					placeholder="your name"
-					className="rounded-2xl text-xl text-primary border-white/15"
+					className="rounded-2xl text-primary border-white/15"
                     {...field}
 				/>
                   </FormControl>
@@ -60,7 +60,7 @@ function ContactForm() {
                   <FormControl>
                   <Input
 					placeholder="your email"
-					className="rounded-2xl  text-xl text-primary border-white/15"
+					className="rounded-2xl  text-primary border-white/15"
                     {...field}
 				/>
                   </FormControl>
@@ -76,7 +76,7 @@ function ContactForm() {
                   <FormControl>
                   <Input
 					placeholder="your phone"
-					className="rounded-2xl  text-xl text-primary border-white/15"
+					className="rounded-2xl  text-primary border-white/15"
                     {...field}
 				/>
                   </FormControl>
@@ -92,7 +92,7 @@ function ContactForm() {
                   <FormControl>
                   <Textarea
 					placeholder="Hey there! I was very impressed with your work..."
-					className="rounded-2xl  text-xl text-primary border-white/15"
+					className="rounded-2xl  text-primary border-white/15"
                     {...field}
 				/>
                   </FormControl>
@@ -100,7 +100,7 @@ function ContactForm() {
                 </FormItem>
               )}
             />
-           <div className="w-full flex justify-end items-center">
+           <div className="w-full flex justify-end items-center pt-4">
            <Button type="submit" className="rounded-full px-6">Submit</Button>
            </div>
           </form>

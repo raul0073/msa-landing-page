@@ -43,7 +43,7 @@ export function ServicesHero() {
 				<motion.p
 					initial={{ opacity: 0, y: -10 }}
 					whileInView={{ opacity: 1, y: 0 }}
-					transition={{ duration: 0.6, ease: "easeIn", delay: 1.2 }}
+					transition={{ duration: 0.6, ease: "easeIn"}}
 					viewport={{ once: true }}
 					className="text-center text-lg md:text-xl text-white/50 mt-8 max-w-2xl mx-auto">
 					{homeLabels.hero.subText} {homeLabels.hero.subText_highlight}{" "}
@@ -54,7 +54,7 @@ export function ServicesHero() {
 						initial={{ opacity: 0, scale: 0.8 }}
 						whileInView={{ opacity: 1, scale: 1 }}
 						viewport={{ once: true }}
-						transition={{ duration: 0.4, ease: "easeIn", delay: 2 }}
+						transition={{ duration: 0.4, ease: "easeIn" }}
 						className="w-full lg:p-6 flex flex-col gap-4 lg:flex-row lg:justify-between  font-semibold lg:text-lg rounded-full">
 						<Button
 							className="w-full p-6 lg:text-lg rounded-full "
@@ -66,7 +66,7 @@ export function ServicesHero() {
 						initial={{ opacity: 0, scale: 0.8 }}
 						whileInView={{ opacity: 1, scale: 1 }}
 						viewport={{ once: true }}
-						transition={{ duration: 0.4, ease: "easeIn", delay: 2 }}
+						transition={{ duration: 0.4, ease: "easeIn" }}
 						className="w-full lg:p-6 flex flex-col gap-4 lg:flex-row lg:justify-between  font-semibold lg:text-lg rounded-full ">
 						<Button
 							className="w-full p-6 lg:text-lg rounded-full font-medium"
