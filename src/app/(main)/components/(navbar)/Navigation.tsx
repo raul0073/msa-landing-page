@@ -37,8 +37,9 @@ export default function Navbar() {
 							<ButtonOutlineComp
 								title="Login"
 								className="bg-transparent text-accent"
+								link="https://rmsa-admin.vercel.app"
 							/>
-							<ButtonDefaultComp title="Signup" className="" />
+							<ButtonDefaultComp title="Get Started" className="" link="/checkout"/>
 						</div>
 					</div>
 				</div>

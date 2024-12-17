@@ -166,6 +166,16 @@ div.container.scrolledNav {
 		}
 	}
 }
+.contact-art-parallax {
+	background-image: url('./../../public/images/bg/pexels-pixabay-159574.jpg');
+	background-size: cover; /* Ensures the image covers the container */
+	background-position: top; /* Centers the image */
+	background-repeat: no-repeat; /* Prevents image tiling */
+	height: inherit; /* Full viewport height */
+	width: 100%; /* Full width */
+	border-radius: 1rem;
+  }
+
 
 .promo {
 	-webkit-animation: scale-up-ver-center 0.4s

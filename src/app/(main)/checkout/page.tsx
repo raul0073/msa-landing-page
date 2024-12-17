@@ -2,7 +2,9 @@ import React from 'react'
 
 function Page() {
   return (
-    <section className='min-h-screen'>Page</section>
+    <section className='checkout py-24'>
+        
+    </section>
   )
 }
 
