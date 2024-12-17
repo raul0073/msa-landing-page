@@ -1,4 +1,3 @@
-import { Boxes } from "@/components/ui/background-boxes";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -6,7 +5,6 @@ function Contact() {
 	return (
 		<section className="contct-page h-[70vh] py-24 md:py-40 " id="contact">
 			<div className="container mx-auto">
-				<Boxes />
 				<h2 className="text-4xl  md:text-5xl pt-12 tracking-tight  text-center bg-clip-text text-transparent  bg-gradient-to-b from-neutral-300 to-neutral-50 dark:from-neutral-600 dark:to-white">
 					{`Let's Build Your Website`}{" "}
 					<span className="text-primary"> Today!</span>

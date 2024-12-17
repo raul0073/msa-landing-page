@@ -21,7 +21,6 @@ export default function Home() {
 			<Coops />
 			<FAQ />
 			<Contact />
-			{/* <NewsletterSubscriptionComp /> */}
 		</Fragment>
 	);
 }
