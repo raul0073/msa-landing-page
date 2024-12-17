@@ -60,10 +60,10 @@ export function Introduction() {
 			<div className="container mx-auto">
 				<div className="mb-24">
 					<h2 className="w-full text-center text-white text-4xl  md:text-5xl max-w-2xl mx-auto">
-						Your analytics need at one place.
+					Your analytics need in one place.
 					</h2>
 					<p className="pt-8 text-lg w-full text-center text-white/70">
-						More features, Less money
+						More features, Less bills.
 					</p>
 				</div>
 
