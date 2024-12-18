@@ -20,7 +20,7 @@ export function ServicesHero() {
 					whileInView={{ opacity: 1, y: 0 }}
 					transition={transition}
 					viewport={{ once: true }}
-					className=" w-full text-center  d bg-clip-text text-transparent  bg-gradient-to-b from-neutral-400 to-neutral-50 dark:from-neutral-600 dark:to-white text-5xl md:text-7xl lg:text-8xl font-sans py-2  relative z-20 font-bold tracking-tight mt-6">
+					className=" w-full text-center  d bg-clip-text text-transparent  bg-gradient-to-b from-neutral-400 to-neutral-50 dark:from-neutral-600 dark:to-white text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-sans py-2  relative z-20 font-bold tracking-tight mt-6">
 					{homeLabels.hero.text1_visual} <br />
 					{homeLabels.hero.text2_visual}{" "}
 					<span className="relative">
@@ -49,7 +49,7 @@ export function ServicesHero() {
 					{homeLabels.hero.subText} {homeLabels.hero.subText_highlight}{" "}
 					{homeLabels.hero.subText_after_highlight}
 				</motion.p>
-				<div className="flex flex-col md:flex-row justify-center gap-4 w-2/3 max-w-xl mx-auto mt-24 heroBtns">
+				<div className="flex flex-col md:flex-row justify-center gap-4 w-[80%] md:w-2/3 max-w-xl mx-auto mt-24 heroBtns">
 					<motion.div
 						initial={{ opacity: 0, scale: 0.8 }}
 						whileInView={{ opacity: 1, scale: 1 }}
@@ -57,7 +57,7 @@ export function ServicesHero() {
 						transition={{ duration: 0.4, ease: "easeIn", delay: 2 }}
 						className="w-full lg:p-6 flex flex-col gap-4 lg:flex-row lg:justify-between  font-semibold lg:text-lg rounded-full">
 						<Button
-							className="w-full p-6 lg:text-lg rounded-full "
+							className="w-full p-6 lg:text-lg rounded-full text-black font-medium"
 							variant={"default"}>
 							{homeLabels.content.btn_ingage}
 						</Button>

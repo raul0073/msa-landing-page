@@ -1,5 +1,6 @@
+"use client";
 import PricingCards from "@/components/pricing-card";
-
+import { motion } from "framer-motion";
 export const plans = [
 	{
 		name: "Basic",
@@ -33,11 +34,18 @@ export const plans = [
 
 function Pricing() {
 	return (
-		<section className="min-h-[40rem] px-4 bg-white py-20 md:py-40 relative group overflow-hidden" id="pricing">
+		<section
+			className="min-h-[40rem] px-4 bg-white py-20 md:py-40 relative group overflow-hidden"
+			id="pricing">
 			<div className="max-w-xl md:mx-auto md:text-center xl:max-w-none relative z-10">
-				<h2 className="font-display text-4xl  md:text-5xl tracking-tight text-zinc-900 sm:text-4xl ">
+				<motion.h2
+					initial={{ opacity: 0, x: -20 }}
+					whileInView={{ opacity: 1, x: 0 }}
+					transition={{ duration: 0.5, ease: "easeInOut" }}
+					viewport={{ once: true, amount: .5 }}
+					className="font-display text-4xl  md:text-5xl tracking-tight text-zinc-900 sm:text-4xl ">
 					Our pricing will surprise you
-				</h2>
+				</motion.h2>
 
 				<p className="mt-6 text-lg tracking-tight  text-zinc-600">
 					With so many features at your disposal, you might have to take a loan

@@ -1,5 +1,6 @@
+"use client";
+import { motion } from "framer-motion";
 import Image from "next/image";
-
 export const testimonials = [
 	{
 		avatar: "https://i.pravatar.cc/150",
@@ -45,9 +46,14 @@ function Testimonials() {
 			<div className="absolute w-40 lg:w-[40rem] h-96 -top-24 right-[50%] translate-x-[50%] bg-gradient-to-t from-[#8779ff] to-[#2cff36] blur-3xl  rounded-full opacity-20"></div>
 			<div className="container py-20 md:py-40 mx-auto">
 				<div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
-					<h2 className="font-display text-4xl  md:text-5xl tracking-tight text-zinc-900 text-center mt-12">
+					<motion.h2
+						initial={{ opacity: 0, y: 20 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						transition={{ duration: 0.5, ease: "easeInOut" }}
+						viewport={{ once: true, amount: 1 }}
+						className="font-display text-4xl  md:text-5xl tracking-tight text-zinc-900 text-center mt-12">
 						See what our users say about us
-					</h2>
+					</motion.h2>
 					<p className="mt-6 text-lg tracking-tight  bg-gradient-to-r from-slate-500 to-gray-400 bg-clip-text text-transparent  text-center">
 						Our very own wall of love.{" "}
 					</p>
@@ -56,7 +62,7 @@ function Testimonials() {
 					{testimonials.map((item, index) => {
 						return (
 							<div
-								className="shadow-lg px-8 py-12 rounded-xl border flex-1 mb-8"
+								className="shadow-lg px-8 py-12 rounded-xl border border-zinc-700/10  flex-1 mb-8"
 								key={index}>
 								<p className="text-xl md:text-2xl font-normal text-zinc-700 leading-relaxed">
 									{item.text}
@@ -67,7 +73,7 @@ function Testimonials() {
 										alt="avatar"
 										width={35}
 										height={35}
-										className="transition duration-500  blur-0 scale-100 rounded-full border border-gray-100"
+										className="transition duration-500  blur-0 scale-100 rounded-full border "
 									/>
 									<div className="flex flex-col">
 										<p className="text-sm text-gray-800">{item.name}</p>

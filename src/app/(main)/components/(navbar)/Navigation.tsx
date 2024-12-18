@@ -20,10 +20,10 @@ export default function Navbar() {
 						<nav className="">
 							<ul className="flex gap-6 font-medium">
 								{navLinks.map((link) => (
-									<li key={link.href}>
+									<li key={link.href} className="shrink-0">
 										<a
 											href={link.href}
-											className="text-white/60 hover:text-white hover:tracking-wider transition-all duration-100 ease-in-out">
+											className="text-white/60 hover:text-white hover:tracking-wider transition-all duration-300 ease-in-out">
 											{link.label}
 										</a>
 									</li>
@@ -36,7 +36,7 @@ export default function Navbar() {
 						<div className="hidden md:inline-flex gap-4">
 							<ButtonOutlineComp
 								title="Login"
-								className="bg-transparent text-accent"
+								className=""
 								link="https://rmsa-admin.vercel.app"
 							/>
 							<ButtonDefaultComp title="Get Started" className="" link="/checkout"/>

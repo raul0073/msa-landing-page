@@ -14,7 +14,7 @@ function Contact() {
 					You saw the testimonials, right?
 				</p>
 				<div className="max-w-xl mx-auto my-12 flex justify-center">
-					<Button className="rounded-full h-12 w-auto" variant={"secondary"}>
+					<Button className="rounded-full h-12 w-auto px-6 hover:bg-white hover:text-accent" variant={"secondary"}>
 						<Link
 						href={'/contact'}>
 							Contact a Human

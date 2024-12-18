@@ -1,3 +1,4 @@
+'use client'
 import IntroCardIcon from "@/components/intro-card-icon";
 import {
 	Database,
@@ -8,8 +9,8 @@ import {
 	Users,
 } from "lucide-react";
 import { ReactNode } from "react";
-
-const iconClassName = "w-5 h-auto text-lime-400 saturate-200 " 
+import {motion} from "framer-motion";
+const iconClassName = "w-5 h-auto text-lime-400 saturate-200" 
 export const amazingAnalytics = {
 	tagline: "Amazing Analytics you will never ever use.",
 	description:
@@ -58,14 +59,19 @@ export function Introduction() {
 	return (
 		<section className="introduction w-full h-fit py-24 px-4 relative" id="about">
 			<div className="container mx-auto">
-				<div className="mb-24">
+			<motion.div className="mb-24"
+			initial={{opacity:0, y: 30}}
+			whileInView={{opacity:1, y:0}}
+			transition={{duration: .5, ease: "easeInOut"}}
+			viewport={{ once: true, amount: 1}}
+			>
 					<h2 className="w-full text-center text-white text-4xl  md:text-5xl max-w-2xl mx-auto">
 					Your analytics need in one place.
 					</h2>
 					<p className="pt-8 text-lg w-full text-center text-white/70">
 						More features, Less bills.
 					</p>
-				</div>
+				</motion.div>
 
 				<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 max-w-5xl mx-auto gap-20 my-20 md:my-40 px-4">
 					{/* <div className="absolute w-96 h-96 -left-[20rem] -top-48 bg-gradient-to-t from-[#9890e3] to-[#b1f4cf] blur-3xl rounded-full opacity-20"></div> */}

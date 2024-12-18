@@ -2,7 +2,6 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
 import Tag from "../tag";
-
 interface TimelineEntry {
 	title: string;
 	content: React.ReactNode;
@@ -32,19 +31,36 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 		<div
 			className="w-full bg-transparent font-sans md:px-10"
 			ref={containerRef}>
-			<div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
-				<h2 className="text-4xl  md:text-5xl max-w-2xl mb-4 text-white">Our Services</h2>
-				<div className="flex gap-2 mb-4">
+			<div className="max-w-7xl mx-auto py-20 px-2 md:px-8 lg:px-10"
+				
+			>
+				<motion.h2 className="text-4xl  md:text-5xl max-w-2xl mb-4 text-white"
+					initial={{opacity:0, y: 20}}
+					whileInView={{opacity:1, y:0}}
+					transition={{duration: .5, ease: "easeInOut"}}
+					viewport={{ once: true, amount: 1}}
+				>
+					Our Services
+				</motion.h2>
+				<motion.div className="flex gap-2 mb-4"
+					initial={{opacity:0, x: -8}}
+					whileInView={{opacity:1, x:0}}
+					transition={{duration: .6, ease: "easeInOut"}}
+					viewport={{ once: true, amount: 1,}}
+				>
 					<Tag text="Support" />
 					<Tag text="Guidance" />
 					<Tag text="Flexibility" />
-
-				</div>
-				<p className=" text-sm md:text-base max-w-sm bg-gradient-to-r from-slate-500 to-gray-400 bg-clip-text text-transparent ">
+				</motion.div>
+				<motion.p
+					initial={{opacity:0, y: -10}}
+					whileInView={{opacity:1, y:0}}
+					transition={{duration: .5, ease: "easeInOut"}}
+					viewport={{ once: true, amount: 1}}
+				className=" text-sm md:text-base max-w-sm bg-gradient-to-r from-slate-500 to-gray-400 bg-clip-text text-transparent ">
 					Explore our latest innovative tool. <br />
 					These are the solutions we&apos;re excited to share.
-				</p>
-				
+				</motion.p>
 			</div>
 
 			<div ref={ref} className="relative max-w-7xl mx-auto pb-20">
