@@ -101,10 +101,9 @@ type IntroCardProps = {
 export function IntroCard({ icon, title, description }: IntroCardProps) {
 	return (
 		<div className="introCard flex flex-col px-4 relative">
-			<div className="h-10 w-10 rounded-2xl  backdrop-blur-sm flex items-center justify-center  bg-white bg-grid-extrasmall-zinc-200  overflow-hidden shadow-lime-100 shadow-[0_10px_90px_rgba(8,_112,_184,_0.7)]">
+			
 				<IntroCardIcon icon={icon}  />
-				{/* <div className="absolute inset-0 bg-white [mask-image:linear-gradient(to_bottom,transparent,white_4rem,white_calc(100%-4rem),transparent)] z-40"></div> */}
-			</div>
+				
 			<div className="py-3 space-y-4 mt-8">
 				<h3 className="text-white text-2xl">{title}</h3>
 				<p className="text-white/85 text-sm  mt-8 leading-relaxed">

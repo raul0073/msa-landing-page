@@ -25,9 +25,9 @@ function MobileMenu() {
 			<DrawerContent className="rounded-none p-4 w-[200px] border-none bg-black shadow-md shadow-white/15">
 				<DrawerHeader>
 					<DrawerTitle>
-						<Logo className="w-8 h-auto" />
+						<Logo className="w-6 h-auto" alternative />
 					</DrawerTitle>
-					<Separator />
+					<Separator className="w-2/3 mx-auto " />
 				</DrawerHeader>
 				<ul className="space-y-8 text-center font-sans mt-24">
 					{navLinks.map((link) => (

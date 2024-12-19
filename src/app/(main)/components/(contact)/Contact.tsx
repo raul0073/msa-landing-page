@@ -14,12 +14,13 @@ function Contact() {
 					You saw the testimonials, right?
 				</p>
 				<div className="max-w-xl mx-auto my-12 flex justify-center">
-					<Button className="rounded-full h-12 w-auto px-6 hover:bg-white hover:text-accent" variant={"secondary"}>
-						<Link
+				<Button className="text-zinc-950 inline-flex items-center justify-center bg-gradient-to-b from-[#e6e6e6] to-[#ffffff] text-base px-6 transition duration-150 shadow-[0_10px_20px_rgba(0,_0,_0,_.1),0_3px_6px_rgba(0,_0,_0,_.05)] hover:shadow-[rgba(0,_1,_0,_.2)_0_2px_8px] active:outline-none hover:opacity-80 rounded-full py-6  w-[250px] mt-8">
+				<Link
 						href={'/contact'}>
 							Contact a Human
 						</Link>
 					</Button>
+	
 				
 				</div>
 			</div>

@@ -5,7 +5,7 @@ import React from 'react'
 
 export function ButtonOutlineComp({title, className, link}: {title: string, className: string, link: string}) {
   return (
-    <Button variant={'outline'} className={cn(`h-10 rounded-full px-6 font-medium ${className}`)}>
+    <Button variant={'outline'} className={cn(`h-10 rounded-full px-6 font-medium text-white/80 ${className}`)}>
          <Link
       href={link}
       >
